@@ -11,18 +11,17 @@ fetch('https://api.github.com/users/Alan-mondego/repos')
     return response.json();
   })
   .then(repositorios => {
-    // Filtra apenas repositórios próprios com descrição
+    
     const reposFiltrados = repositorios.filter(repo => !repo.fork && repo.description);
     
-    // Limpa o container
+ 
     container.innerHTML = '';
 
-    // Cria os cards dos projetos
     reposFiltrados.slice(0, 6).forEach(repo => {
       const caixaProjeto = document.createElement('div');
       caixaProjeto.className = 'project-card';
 
-      // Escolhe imagem baseada na linguagem
+      
       let imagemProjeto = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop'; // Padrão
       
       if (repo.language === 'JavaScript' || repo.language === 'TypeScript') {

@@ -1,11 +1,10 @@
-/* Reset e configurações básicas */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Reset específico para elementos que podem ter espaçamento padrão */
 h1, h2, h3, h4, h5, h6, p, section, div {
     margin: 0;
     padding: 0;
@@ -28,7 +27,7 @@ body {
     padding: 2rem;
 }
 
-/* Background Lines */
+
 .background-lines {
     position: fixed;
     top: 0;
@@ -88,7 +87,6 @@ body {
     color: #ec4899;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     max-width: 800px;
@@ -193,7 +191,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Skills Section */
 .skills {
     margin-bottom: 2rem;
 }
@@ -243,7 +240,6 @@ body {
     color: #d1d5db;
 }
 
-/* Portfolio Section */
 .portfolio {
     width: 100%;
     max-width: 1200px;
@@ -392,7 +388,7 @@ body {
     font-size: 1rem;
 }
 
-/* Services Section */
+
 .services {
     width: 100%;
     max-width: 1200px;
@@ -475,7 +471,7 @@ body {
     line-height: 1.6;
 }
 
-/* Contact Section */
+
 .contact {
     width: 100%;
     max-width: 800px;
@@ -568,7 +564,7 @@ body {
     color: #a0a0a0;
 }
 
-/* Email link specific styles */
+
 .email-link {
     cursor: pointer;
 }
@@ -582,7 +578,7 @@ body {
     color: #ea4335;
 }
 
-/* WhatsApp link specific styles */
+
 .whatsapp-link:hover {
     background: rgba(37, 211, 102, 0.1);
     border-color: #25d366;
@@ -592,7 +588,7 @@ body {
     color: #25d366;
 }
 
-/* Loading, Error e No Projects States */
+
 .loading, .no-projects, .error {
     text-align: center;
     padding: 3rem;
@@ -614,8 +610,6 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-
-/* Refresh Button */
 .refresh-button {
     position: absolute;
     top: 0;
@@ -639,7 +633,7 @@ body {
     transform: rotate(180deg);
 }
 
-/* Scroll Indicator */
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -649,7 +643,7 @@ body {
     font-size: 2rem;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
